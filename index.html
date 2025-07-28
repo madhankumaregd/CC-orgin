@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civic Companion</title>
+    <link rel="icon" href="assets/image/icon.png" alt="#icon" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Menu Bar-->
+    <div class="bar" id="bar">
+      <div class="head-logo">
+        <img src="assets/image/logo.png" alt="#logo" />
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#description">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menu Tabs -->
+      <div class="body">
+        <div class="tabs">
+          <input
+            checked=""
+            value="Home"
+            name="fav_language"
+            id="html"
+            type="radio"
+            class="input"
+          />
+          <label for="html" class="label" onclick="scrollToheader('header')"
+            >Home</label
+          >
+          <input
+            value="About"
+            name="fav_language"
+            id="css"
+            type="radio"
+            class="input"
+          />
+          <label for="css" class="label" onclick="scrollToheader('description')"
+            >About</label
+          >
+          <input
+            value="Contact"
+            name="fav_language"
+            id="javascript"
+            type="radio"
+            class="input"
+          />
+          <label
+            for="javascript"
+            class="label"
+            onclick="scrollToheader('Contact')"
+            >Contact</label
+          >
+        </div>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="container">
+        <h1>Civic Companion</h1>
+        <p>
+          Empowering citizens with knowledge of Indian Laws and Human Rights
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="options-grid">
+          <a href="indian-laws/categories hub.html" class="option-card">
+            <img src="assets/image/laws.jpg" alt="Indian Laws" />
+            <i class="fas fa-balance-scale"></i>
+            <h2>Indian Laws</h2>
+            <p>Explore the legal framework of India</p>
+          </a>
+          <a href="human-rights/categories-hub.html" class="option-card">
+            <img src="assets/image/human right.png" alt="Human Rights" />
+            <i class="fas fa-dove"></i>
+            <h2>Human Rights</h2>
+            <p>Understand your fundamental rights</p>
+          </a>
+          <a href="#" class="option-card">
+            <img src="assets/image/government.jpg" alt="Government Schemes" />
+            <i class="fas fa-landmark"></i>
+            <h2>Government Schemes</h2>
+            <p>Learn about various government initiatives</p>
+          </a>
+          <!-- <a href="#" class="option-card">
+            <img src="assets/images/rights.jpg" alt="Women Rights" />
+            <i class="fas fa-venus"></i>
+            <h2>Women's Corner</h2>
+            <p>Resources and rights for women</p>
+          </a>
+          <a href="#" class="option-card">
+            <img src="assets/images/rights.jpg" alt="student Rights" />
+            <i class="fas fa-graduation-cap"></i>
+            <h2>Students centre</h2>
+            <p>Information and opportunities for student</p>
+          </a> -->
+        </div>
+        <section class="header" id="description">
+          <h2>Indian Law: Ensuring Justice and Order</h2>
+          <p>
+            <i class="fas fa-balance-scale"></i>
+            Indian law is a comprehensive legal system that upholds justice,
+            safeguards rights, and maintains social harmony. It covers
+            <strong>criminal, civil, corporate, and administrative laws</strong
+            >, ensuring fairness and accountability. With continuous reforms, it
+            integrates
+            <strong
+              >digital advancements, stricter enforcement, and faster legal
+              processes</strong
+            >
+            for greater transparency and efficiency. It empowers citizens,
+            strengthens governance, and balances individual freedoms with
+            national security. By evolving with societal needs, Indian law
+            ensures a just, secure, and progressive nation.
+          </p>
+
+          <h2>Human Rights: Protecting Dignity and Freedom</h2>
+          <p>
+            <i class="fas fa-dove"></i>
+            Human rights are fundamental freedoms and protections that ensure
+            equality, justice, and dignity for all individuals. They cover
+            <strong
+              >civil, political, social, economic, and cultural rights</strong
+            >, safeguarding people from discrimination and injustice. With
+            evolving policies, human rights laws promote
+            <strong
+              >treatment, freedom of expression, and access to essential
+              resources</strong
+            >
+            for a just and inclusive society. They empower individuals,
+            strengthen communities, and uphold ethical governance. By adapting
+            to global challenges, human rights continue to shape a world based
+            on freedom, equality, and respect.
+          </p>
+        </section>
+        <section class="header" id="Contact">
+          <div class="contact-section">
+            <form class="contact-form">
+              <input type="text" placeholder="Your's name *" required />
+              <input type="email" placeholder="Email *" required />
+              <textarea
+                placeholder="What can we help you with?"
+                required
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Civic Companion. All rights reserved.</p>
+      </div>
+
+      <!-- Scroll Arrow -->
+      <a href="#top" class="scroll-to-top" id="element">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="34"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+          />
+        </svg>
+      </a>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".body").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

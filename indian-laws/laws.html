@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civic Companion - Indian Laws</title>
+    <link rel="icon" href="../assets/image/icon.png" alt="#icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <!-- Menu Bar-->
+    <div class="bar" id="bar">
+      <a href="../index.html" s="head-logo">
+        <img src="../assets/image/logo.png" alt="#logo" />
+      </a>
+      <h2>Civic Companion</h2>
+      <!-- <div class="search-container">
+        <input type="text" placeholder="search...." class="search-input" />
+        <i class="fas fa-search search-icon"></i>
+      </div> -->
+    </div>
+    <header id="top" class="header">
+      <div class="container">
+        <h1>Indian Laws</h1>
+        <p style="margin-top: 0; margin-bottom: 3%">
+          Explore the chapters of Indian legal framework
+        </p>
+      </div>
+      <!-- <div class="InputContainer">
+      <input placeholder="Search.." id="input" class="input" name="text" type="text">
+      
+    </div> -->
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="chapters-grid" id="chapters-grid">
+          <!-- Chapters will be dynamically loaded here -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Civic Companion. All rights reserved.</p>
+      </div>
+
+      <!-- Scroll Arrow -->
+      <a href="#top" class="scroll-to-top" id="element">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="34"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+          />
+        </svg>
+      </a>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    <script>
+      // Dynamically load chapters
+      const chaptersGrid = document.getElementById("chapters-grid");
+      const chapters = Array.from({ length: 20 }, (_, i) => i + 1);
+
+      chapters.forEach((chapter) => {
+        const chapterCard = document.createElement("a");
+        chapterCard.href = `section.html?chapter=${chapter}`;
+        chapterCard.className = "chapter-card";
+        chapterCard.innerHTML = `
+        <h2>Chapter ${chapter}</h2>
+        <p>Explore the categories in this chapter</p>
+      `;
+        chaptersGrid.appendChild(chapterCard);
+      });
+    </script>
+  </body>
+</html>
